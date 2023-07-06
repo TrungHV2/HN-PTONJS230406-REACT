@@ -1,6 +1,7 @@
 import React from 'react'
 import TableHead from './TableHead'
 import TableBody from './TableBody'
+import { useState } from 'react'
 
 export default function TableComponent() {
     const columns = [
@@ -11,16 +12,18 @@ export default function TableComponent() {
         {label: 'Birthday', field: 'birthday'},
     ]
 
-    const data = [
+    const [data, setData] = useState([
         {id: 1, name: 'Nguyễn Văn A', email: 'abc@gmail.com', birthday: '04/07/2000', phone: '0987654321'},
         {id: 2, name: 'Nguyễn Văn B', email: 'abc@gmail.com', birthday: '04/07/2000', phone: '0987654321'},
         {id: 3, name: 'Nguyễn Văn C', email: 'abc@gmail.com', birthday: '04/07/2000', phone: '0987654321'},
         {id: 4, name: 'Nguyễn Văn D', email: 'abc@gmail.com', birthday: '04/07/2000', phone: '0987654321'},
         {id: 5, name: 'Nguyễn Văn E', email: 'abc@gmail.com', birthday: '04/07/2000', phone: '0987654321'},
-    ]
+    ])
     /**
      * Xây dựng tính năng sắp xếp dữ liệu khi click vào tiêu đề của từng cột, sử dụng hooks, events, props, ...
      * Tham khảo cách sắp xếp trong bài thực hành session4
+     * 
+     * Sử dụng reducer và useReducer để định nghĩa các logic xử lý (thêm, sửa, xóa) cho state data. Viết hàm xử lý sự kiện cho 3 button Thêm, Sửa, Xóa để dispatch action để reducer update dữ liệu state data.
      */
     return (
         <div>
