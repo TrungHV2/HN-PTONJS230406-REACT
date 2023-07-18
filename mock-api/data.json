@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "email": "admin@gmail.com"
+    },
+    {
+      "username": "customer",
+      "password": "123456",
+      "email": "customer@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "employee",
+      "password": "123456",
+      "email": "employee@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "employee1",
+      "password": "123456",
+      "email": "employee1@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "employee2",
+      "password": "123456",
+      "email": "employee2@gmail.com",
+      "id": 5
+    },
+    {
+      "username": "employee3",
+      "password": "123456",
+      "email": "employee3@gmail.com",
+      "id": 6
+    },
+    {
+      "username": "employee4",
+      "password": "123456",
+      "email": "employee4@gmail.com",
+      "id": 7
+    },
+    {
+      "username": "customer1",
+      "password": "123456",
+      "email": "customer1@gmail.com",
+      "id": 8
+    },
+    {
+      "username": "customer2",
+      "password": "123456",
+      "email": "customer1@gmail.com",
+      "id": 9
+    },
+    {
+      "username": "customer3",
+      "password": "123456",
+      "email": "customer3@gmail.com",
+      "id": 10
+    },
+    {
+      "username": "customer4",
+      "password": "123456",
+      "email": "customer4@gmail.com",
+      "id": 11
+    },
+    {
+      "username": "shipper",
+      "password": "123456",
+      "email": "shipper@gmail.com",
+      "id": 12
+    },
+    {
+      "username": "customer6",
+      "password": "123456",
+      "email": "customer6@gmail.com",
+      "id": 13
+    },
+    {
+      "username": "customer7",
+      "password": "123456",
+      "email": "customer7@gmail.com",
+      "id": 14
+    }
+  ],
+  "products": [],
+  "categories": []
+}
