@@ -6,7 +6,7 @@ export const userSaga = {
     fetch: function* (action) {
         try {
             console.log(action);
-            let data = yield call(userApi.getPaginations, action.payload);
+            let data = yield call(userApi.getPaginations, action.payload || 1);
             yield put(userAct.updatePage(action.payload || 1));
             yield put(userAct.fetchSuccess(data));
         } catch (error) {
@@ -19,14 +19,16 @@ export const userSaga = {
             // update state pennding = true
             //yield put(userAct.setPennding(true));
 
-            yield call(this.fetch, {type: 'USER_FETCH'});
+            //cal success
+            //console.log("Post success");
+            //yield put(userAct.setPennding(false));
 
             // let data = yield call(userApi.getPaginations);
             // yield put(userAct.updatePage(action.payload || 1));
             // yield put(userAct.fetchSuccess(data));
-
-            //cal success
-            //console.log("Post success");
-            //yield put(userAct.setPennding(false));
-            
-        } catch (error
+            yield put({type: "USER_FETCH", payload: 1})
+        } catch (error) {
+            yield put("FETCH_ERROR");
+        }
+    }
+}
