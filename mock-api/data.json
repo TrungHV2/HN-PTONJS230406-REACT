@@ -85,6 +85,50 @@
       "id": 14
     }
   ],
-  "products": [],
-  "categories": []
+  "products": [
+    {
+      "name": "DELL 5560",
+      "categoryId": "2",
+      "price": 456000,
+      "discount": 10,
+      "status": true,
+      "id": "9ddb5942-78a0-4ece-bc10-d17679bc2584",
+      "image": "https://firebasestorage.googleapis.com/v0/b/hn-ptonjs230406.appspot.com/o/filesUpload%2Fprinted-dress1.jpg?alt=media&token=98cdc9e3-b78a-4ed9-8b30-4c8c7e4eef47"
+    },
+    {
+      "name": "Samsung galaxy S23",
+      "categoryId": "1",
+      "image": "https://firebasestorage.googleapis.com/v0/b/hn-ptonjs230406.appspot.com/o/filesUpload%2Fprinted-summer-dress.jpg?alt=media&token=4de8475a-a2bb-4190-8e36-61381bf9f034",
+      "price": 23000000,
+      "discount": 15,
+      "status": true,
+      "id": "673242db-5bbd-414b-b6ad-d072a9f95e8f"
+    },
+    {
+      "name": "New product",
+      "categoryId": "3",
+      "price": 1000,
+      "discount": 5,
+      "status": false,
+      "id": "040295ef-427d-4001-90e5-753a7173b813",
+      "image": "https://firebasestorage.googleapis.com/v0/b/hn-ptonjs230406.appspot.com/o/filesUpload%2Fprinted-chiffon-dress8.jpg?alt=media&token=5aa887a2-96a8-4bc8-95de-fb2406c9ceca"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Điện thoại",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "Laptop",
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Tai nghe",
+      "status": true
+    }
+  ]
 }

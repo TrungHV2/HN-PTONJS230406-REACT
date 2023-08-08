@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux'
 
 export default function Header() {
+    const carts = useSelector(s => s.carts);
     return (
         <>
             {/* Start header */}
@@ -204,69 +206,30 @@ export default function Header() {
                                         </div>
                                         <div className="shoping-cart">
                                             <a href="cart.html">
-                                                <span>My Cart (3)</span>
+                                                <span>My Cart ({carts.length})</span>
                                             </a>
                                             <div className="add-to-cart-product">
-                                                <div className="cart-product product-item11">
+                                                {carts.map(c => <div key={c.product.id} className="cart-product">
                                                     <div className="cart-product-image">
                                                         <a href="single-product.html">
                                                             <img
-                                                                src="img/cart/faded-short-sleeves-tshirt.jpg"
+                                                                src={c.product.image}
                                                                 alt="Product"
                                                             />
                                                         </a>
                                                     </div>
                                                     <div className="cart-product-info">
                                                         <p>
-                                                            <span>1</span>x
-                                                            <a href="single-product.html">Faded...</a>
-                                                        </p>
-                                                        <a href="single-product.html">S, Orange</a>
-                                                        <span className="price">£ 19.81</span>
-                                                    </div>
-                                                    <div className="cart-product-remove">
-                                                        <i className="fa fa-times" />
-                                                    </div>
-                                                </div>
-                                                <div className="cart-product">
-                                                    <div className="cart-product-image">
-                                                        <a href="single-product.html">
-                                                            <img src="img/cart/printed-dress.jpg" alt="Product" />
-                                                        </a>
-                                                    </div>
-                                                    <div className="cart-product-info">
-                                                        <p>
-                                                            <span>1</span>x
-                                                            <a href="single-product.html">blouse</a>
-                                                        </p>
-                                                        <a href="single-product.html">S, Black</a>
-                                                        <span className="price">£ 32.40</span>
-                                                    </div>
-                                                    <div className="cart-product-remove">
-                                                        <i className="fa fa-times" />
-                                                    </div>
-                                                </div>
-                                                <div className="cart-product">
-                                                    <div className="cart-product-image">
-                                                        <a href="single-product.html">
-                                                            <img
-                                                                src="img/cart/printed-summer-dress.jpg"
-                                                                alt="Product"
-                                                            />
-                                                        </a>
-                                                    </div>
-                                                    <div className="cart-product-info">
-                                                        <p>
-                                                            <span>1</span>x
+                                                            <span>{c.quantity}</span>x
                                                             <a href="single-product.html">Printed...</a>
                                                         </p>
-                                                        <a href="single-product.html">S, Yellow</a>
+                                                        <a href="single-product.html">{c.product.name}</a>
                                                         <span className="price">£ 36.60</span>
                                                     </div>
                                                     <div className="cart-product-remove">
                                                         <i className="fa fa-times" />
                                                     </div>
-                                                </div>
+                                                </div>)}
                                                 <div className="cart-price">
                                                     <div className="cart-product-line fast-line">
                                                         <span>Shipping</span>

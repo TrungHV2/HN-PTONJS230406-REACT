@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Aside() {
     return (
@@ -53,18 +54,11 @@ export default function Aside() {
                                 <i className="fa fa-angle-left pull-right" />
                             </span>
                         </a>
-                        <ul className="treeview-menu">
-                            <li>
-                                <a href="../../index.html">
-                                    <i className="fa fa-circle-o" /> Dashboard v1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../../index2.html">
-                                    <i className="fa fa-circle-o" /> Dashboard v2
-                                </a>
-                            </li>
-                        </ul>
+                    </li>
+                    <li>
+                        <Link to={'product'}>
+                            <i className="fa fa-dashboard" /> <span>Quản lý sản phẩm</span>
+                        </Link>
                     </li>
                 </ul>
             </section>
