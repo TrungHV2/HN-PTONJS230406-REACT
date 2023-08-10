@@ -16,7 +16,7 @@ export const cartSlice = createSlice({
             // Kiểm tra sp đã tồn tại hay chưa?
             let isDuplicated = false;
             for (let item of state) {
-                if (item.product.id == action.payload.id) {
+                if (item.product.id === action.payload.id) {
                     item.quantity += 1;
                     isDuplicated = true;
                 }

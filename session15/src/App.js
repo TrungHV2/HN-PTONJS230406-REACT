@@ -6,6 +6,7 @@ import ProductComponent from './pages/ProductComponent'
 import HomeComponent from './pages/HomeComponent';
 import Dashboard from './admin/pages/Dashboard';
 import ProductManager from './admin/pages/ProductManager';
+import OrderManager from './admin/pages/OrderManager';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/admin' element={<LayoutAdmin />}>
           <Route index element={<Dashboard />} />
           <Route path='product' element={<ProductManager />} />
+          <Route path='order' element={<OrderManager />} />
         </Route>
       </Routes>
     </>

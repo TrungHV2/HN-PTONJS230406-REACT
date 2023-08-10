@@ -10,9 +10,9 @@ export const productApi = {
         return response.data;
     },
     post: async (data) => {
-        let response = await http.post('products', data);
+        await http.post('products', data);
     },
     put: async (data) => {
-        let response = await http.put('products/'+ data.id, data)
+        await http.put('products/'+ data.id, data)
     }
 }

@@ -60,6 +60,11 @@ export default function Aside() {
                             <i className="fa fa-dashboard" /> <span>Quản lý sản phẩm</span>
                         </Link>
                     </li>
+                    <li>
+                        <Link to={'order'}>
+                            <i className="fa fa-dashboard" /> <span>Quản lý đơn hàng</span>
+                        </Link>
+                    </li>
                 </ul>
             </section>
             {/* /.sidebar */}

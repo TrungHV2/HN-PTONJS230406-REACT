@@ -88,7 +88,7 @@
   "products": [
     {
       "name": "DELL 5560",
-      "categoryId": "2",
+      "categoryId": 2,
       "price": 456000,
       "discount": 10,
       "status": true,
@@ -97,7 +97,7 @@
     },
     {
       "name": "Samsung galaxy S23",
-      "categoryId": "1",
+      "categoryId": 1,
       "image": "https://firebasestorage.googleapis.com/v0/b/hn-ptonjs230406.appspot.com/o/filesUpload%2Fprinted-summer-dress.jpg?alt=media&token=4de8475a-a2bb-4190-8e36-61381bf9f034",
       "price": 23000000,
       "discount": 15,
@@ -106,7 +106,7 @@
     },
     {
       "name": "New product",
-      "categoryId": "3",
+      "categoryId": 3,
       "price": 1000,
       "discount": 5,
       "status": false,
@@ -129,6 +129,44 @@
       "id": 3,
       "name": "Tai nghe",
       "status": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "673242db-5bbd-414b-b6ad-d072a9f96e8f",
+      "customerName": "Nguyễn Văn A",
+      "email": "abc@gmail.com",
+      "phone": "0962229893",
+      "created": "2023-08-10 19:11:00",
+      "status": 2
+    },
+    {
+      "id": "673242db-5bbd-414b-b6ad-d072a9f97e8f",
+      "customerName": "Hoàng Văn Trung",
+      "email": "trunghv@gmail.com",
+      "phone": "0962229893",
+      "created": "2023-08-10 19:58:00",
+      "status": 2
+    }
+  ],
+  "order_details": [
+    {
+      "orderId": "673242db-5bbd-414b-b6ad-d072a9f96e8f",
+      "productId": "9ddb5942-78a0-4ece-bc10-d17679bc2584",
+      "price": 456000,
+      "quantity": 2
+    },
+    {
+      "orderId": "673242db-5bbd-414b-b6ad-d072a9f96e8f",
+      "productId": "673242db-5bbd-414b-b6ad-d072a9f95e8f",
+      "price": 23000000,
+      "quantity": 1
+    },
+    {
+      "orderId": "673242db-5bbd-414b-b6ad-d072a9f97e8f",
+      "productId": "673242db-5bbd-414b-b6ad-d072a9f95e8f",
+      "price": 23000000,
+      "quantity": 5
     }
   ]
 }

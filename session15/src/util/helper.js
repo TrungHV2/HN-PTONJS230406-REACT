@@ -14,6 +14,7 @@ export const loadScripts = (urls = []) => {
     for (let url of urls) {
         let script = document.createElement('script');
         script.async = false;
+        script.type = 'text/babel';
         script.src = url;
         document.body.appendChild(script);
         scripts.push(script);

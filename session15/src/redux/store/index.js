@@ -3,6 +3,7 @@ import userReducers from '../slice/userSlice'
 import productReducers from '../slice/productSlice'
 import categoryReducers from '../slice/categorySlice'
 import cartReducers from '../slice/cartSlice'
+import orderReducers from '../slice/orderSlice'
 import createSagaMiddleware from 'redux-saga';
 import { rootSaga } from '../saga';
 
@@ -13,7 +14,8 @@ export const storeApp = configureStore({
         users: userReducers,
         products: productReducers,
         categories: categoryReducers,
-        carts: cartReducers
+        carts: cartReducers,
+        orders: orderReducers
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(sagaMiddleware)
 })
